@@ -46,7 +46,7 @@ namespace MfaApiDemo.Controllers
             using var bitmap = qrCode.GetGraphic(20);
             using var ms = new MemoryStream();
 
-            bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png); // <-- fully qualified name
+            bitmap.Save(ms, ImageFormat.Png); // <-- fully qualified name
             var qrBytes = ms.ToArray();
             var base64 = Convert.ToBase64String(qrBytes);
 
