@@ -1,0 +1,6 @@
+@MfaApiDemo_HostAddress = http://localhost:5210
+
+GET {{MfaApiDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
